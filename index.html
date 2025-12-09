@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/ufo.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -72,6 +72,9 @@
           </a>
           <a class="navbar-item" href="https://acc25art.github.io/">
             Multi-modal learning for ART
+          </a>
+          <a class="navbar-item" href="https://robust-art.github.io/">
+            ART for chance-constrained passively-safe rendezvous
           </a>
         </div>
       </div>
@@ -182,7 +185,7 @@
   <div class="container is-max-desktop">
 
     <div class="content has-text-centered">
-      <img src="./static/images/experiment_workflow.png"
+      <img src="./static/images/sages_summary.png"
       height="400px" width="1200px"/>
     </div>
 
@@ -192,7 +195,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Coming soon...
+            Reliable real-time trajectory generation is essential for future autonomous spacecraft. While recent progress in nonconvex guidance and control is paving the way for onboard autonomous trajectory optimization, these methods still rely on extensive expert input (e.g., waypoints, constraints, mission timelines, etc.), which limits the operational scalability in real rendezvous missions.
+            This paper introduces SAGES (Semantic Autonomous Guidance Engine for Space), a trajectory-generation framework that translates natural-language commands into spacecraft trajectories that reflect high-level intent while respecting nonconvex constraints. 
+            Experiments in two settings---fault-tolerant proximity operations with continuous-time constraint enforcement and a free-flying robotic platform---demonstrate that SAGES reliably produces trajectories aligned with human commands, achieving over 90\% semantic-behavioral consistency across diverse behavior modes.
+            Ultimately, this work marks an initial step toward language-conditioned, constraint-aware spacecraft trajectory generation, enabling operators to interactively guide both safety and behavior through intuitive natural-language commands with reduced expert burden. 
           </p>
         </div>
       </div>
