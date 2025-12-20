@@ -312,80 +312,114 @@ predict next-step control and state variables.
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!--/ Results. -->
+    <!-- Numerical Results -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
+
         <h2 class="title is-3">Numerical results</h2>
-        
+
+        <!-- Intro -->
         <div class="content has-text-justified">
           <p>
-            The generalization capabilities of the SAGES is evaluated in two different test scenarios, inlcuding nonlinear dynamics and obstacle avoidance constraints:
+            The generalization capabilities of SAGES are evaluated in two representative test scenarios
+            involving nonlinear dynamics and obstacle avoidance constraints:
           </p>
           <ol type="a">
-            <li><em>Fault-tolerant spacraft proximity operation scenario</em></li>
-            <li><em>Free-flyer robotic testbed.</em></li>
+            <li><em>Fault-tolerant spacecraft proximity operation scenario</em></li>
+            <li><em>Free-flyer robotic testbed</em></li>
           </ol>
         </div>
 
+        <!-- Representative trajectories -->
         <div class="content has-text-centered">
 
-        <!-- ---- Large RPOD figure ---- -->
-        <figure class="figure-large">
-          <img src="./static/images/rep_traj_rpod.png"
-               alt="RPOD representative trajectory"
-               width="900"
-               height="315"
-               style="max-width:100%; height:auto;" />
-          <figcaption class="figure-caption">
-            Spacecraft proximity operations: Behavior 0
-          </figcaption>
-        </figure>
-      
-        <!-- ---- Two Free-Flyer figures in one row ---- -->
-        <div class="figure-row" style="max-width:900px; margin:24px auto 0; display:flex; gap:18px; justify-content:center;">
-          <figure style="width:420px;">
-            <img src="./static/images/ff_rep_soln2.png" width="420" height="270" style="display:block;" />
-            <figcaption class="figure-caption">Free-Flyer: Behavior 0</figcaption>
+          <!-- Large RPOD figure -->
+          <figure class="figure-large">
+            <img src="./static/images/rep_traj_rpod.png"
+                 alt="RPOD representative trajectory"
+                 width="900"
+                 height="315"
+                 style="max-width:100%; height:auto;" />
+            <figcaption class="figure-caption">
+              Spacecraft proximity operations: Behavior&nbsp;0
+            </figcaption>
           </figure>
-        
-          <figure style="width:420px;">
-            <img src="./static/images/ff_rep_soln1.png" width="420" height="270" style="display:block;" />
-            <figcaption class="figure-caption">Free-Flyer: Behavior 1</figcaption>
-          </figure>
-        </div>
-      
-      </div>
 
-    
-        <div class="content has-text-justified">
+          <!-- Two Free-Flyer figures in one row -->
+          <div class="figure-row"
+               style="max-width:900px; margin:24px auto 0; display:flex; gap:18px; justify-content:center;">
+
+            <figure style="width:420px; margin:0;">
+              <img src="./static/images/ff_rep_soln2.png"
+                   alt="Free-flyer representative trajectory 1"
+                   width="420"
+                   height="270"
+                   style="display:block;" />
+              <figcaption class="figure-caption">
+                Free-Flyer: Behavior&nbsp;0
+              </figcaption>
+            </figure>
+
+            <figure style="width:420px; margin:0;">
+              <img src="./static/images/ff_rep_soln1.png"
+                   alt="Free-flyer representative trajectory 2"
+                   width="420"
+                   height="270"
+                   style="display:block;" />
+              <figcaption class="figure-caption">
+                Free-Flyer: Behavior&nbsp;1
+              </figcaption>
+            </figure>
+
+          </div>
+        </div>
+
+        <!-- Post-SCP analysis text -->
+        <div class="content has-text-justified" style="margin-top:24px;">
           <p>
-            Although targeting explicitly ....
+            We evaluate the impact of SAGES warm-starting on SCP convergence and solution quality.
+    The analysis compares convergence probability, objective optimality, iteration counts,
+    and total runtime against a convex waypoint-hopping initialization.
+    All statistics are computed on <em>previously unseen problem instances and natural-language
+    command templates</em>, across both the free-flyer robotic testbed and spacecraft proximity
+    operation scenarios, excluding cases that converge at the convex stage.
           </p>
         </div>
-    
-        <div class="content has-text-centered">
-          <img src="./static/images/open_loop_results_qfr_FT_ylim.svg"
-          height="500px" width="500px"/>
+
+        <!-- Two-panel post-SCP plots -->
+        <div class="columns is-centered is-variable is-4">
+
+          <!-- Fig 8(a) -->
+          <div class="column is-5 has-text-centered">
+            <img src="./static/images/FF_post_scp_analys.png"
+                 alt="Post-SCP analysis: Free-flyer"
+                 width="480"
+                 height="360"
+                 style="max-width:100%; height:auto;" />
+            <p class="is-size-7 has-text-grey">
+              Fig.&nbsp;8(a) Free-flyer robotic testbed
+            </p>
+          </div>
+
+          <!-- Fig 8(b) -->
+          <div class="column is-5 has-text-centered">
+            <img src="./static/images/rpod_scp_ws_analysis.png"
+                 alt="Post-SCP analysis: Spacecraft proximity operations"
+                 width="480"
+                 height="360"
+                 style="max-width:100%; height:auto;" />
+            <p class="is-size-7 has-text-grey">
+              Fig.&nbsp;8(b) Spacecraft proximity operations
+            </p>
+          </div>
+
         </div>
 
-        <div class="content has-text-justified">
-          <p>
-            In the closed-loop setting,.....
-          </p>
-        </div>
-    
-        <div class="content has-text-centered">
-          <img src="./static/images/closed_loop_cost_cross_applications_fdr.svg"
-          height="500px" width="500px"/>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/images/closed_loop_time_cross_applications_fdr.svg"
-          height="500px" width="500px"/>
-        </div>
       </div>
-    </div>    
+    </div>
   </div>
 </section>
+
 
 
 
