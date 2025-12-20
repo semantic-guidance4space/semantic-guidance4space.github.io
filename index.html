@@ -264,49 +264,6 @@ predict next-step control and state variables.
   </div>
 </section>
 
-
-
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Dataset Generation</h2>
-        <div class="content has-text-justified">
-          <p>
-            Two complexities are added to the rendezvous problem in order to get closer to the realistic scneario: 
-            (1) <b>fault-tolerance (passice safety)</b> along the controlled trajectory, and (2) <b>presence of uncertianty</b> (e.g., navigation, actuation, unmodeled dynamics)).
-            In order to generate the robust trajectories, <b>chance-constrained optimal control problem (CC-OCP)</b> is formulated.  
-            The trajectory dataset contains 115,000 samples of Low Earth Orbit (LEO) rendezvous trajectories. 
-          </p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="columns is-centered">
-      <div class="content has-text-centered">
-        <img src="./static/images/v12_train_data.png"
-        height="400px" width="600px"/>
-      </div>
-    </div>
-
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Dataset Generation</h2>
-        <div class="content has-text-justified">
-          <p>
-            The sample robust passive safe trajectories are shwon below. 
-          </p>
-        </div>
-      </div>
-    </div> -->
-
-
-    <!-- <div class="columns is-centered">
-      <div class="content has-text-centered">
-        <img src="./static/images/sample_ps_traj.png"
-        height="400px" width="600px"/>
-      </div>
-    </div> -->
   </div>
 </section>
 
@@ -387,33 +344,37 @@ predict next-step control and state variables.
         </div>
 
         <!-- Two-panel post-SCP plots -->
-        <div class="columns is-centered is-variable is-4">
+        <!-- Representative trajectories -->
+        <div class="content has-text-centered">
+          <!-- Two figures in one row -->
+          <div class="figure-row"
+               style="max-width:900px; margin:24px auto 0; display:flex; gap:18px; justify-content:center;">
 
-          <!-- Fig 8(a) -->
-          <div class="column is-5 has-text-centered">
-            <img src="./static/images/FF_post_scp_analys.png"
-                 alt="Post-SCP analysis: Free-flyer"
-                 width="480"
-                 height="360"
-                 style="max-width:100%; height:auto;" />
-            <p class="is-size-7 has-text-grey">
-              Fig.&nbsp;8(a) Free-flyer robotic testbed
-            </p>
+            <figure style="width:420px; margin:0;">
+              <img src="./static/images/FF_post_scp_analys.png"
+                   alt="Free-flyer Scenario"
+                   width="420"
+                   height="270"
+                   style="display:block;" />
+              <figcaption class="figure-caption">
+                Free-flyer Scenario
+              </figcaption>
+            </figure>
+
+            <figure style="width:420px; margin:0;">
+              <img src="./static/images/rpod_scp_ws_analysis.png"
+                   alt="Spacecraft proximity operations"
+                   width="420"
+                   height="270"
+                   style="display:block;" />
+              <figcaption class="figure-caption">
+                Spacecraft proximity operations
+              </figcaption>
+            </figure>
+
           </div>
-
-          <!-- Fig 8(b) -->
-          <div class="column is-5 has-text-centered">
-            <img src="./static/images/rpod_scp_ws_analysis.png"
-                 alt="Post-SCP analysis: Spacecraft proximity operations"
-                 width="480"
-                 height="360"
-                 style="max-width:100%; height:auto;" />
-            <p class="is-size-7 has-text-grey">
-              Fig.&nbsp;8(b) Spacecraft proximity operations
-            </p>
-          </div>
-
         </div>
+        
 
       </div>
     </div>
