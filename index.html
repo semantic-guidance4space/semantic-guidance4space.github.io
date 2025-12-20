@@ -233,12 +233,10 @@
     <div class="columns is-centered">
       <div class="column is-three-quarters">
         <div class="content has-text-justified">
-          <h3 class="title is-4">Language-Conditioned Trajectory Generation</h3>
           <p>
-            The following figure illustrates the transformer-based trajectory generation pipeline used in SAGES.
-            Natural-language commands are embedded and fused with system state and constraint representations,
-            enabling the model to generate dynamically feasible, constraint-aware trajectory proposals that
-            can be directly executed or used to warm-start sequential convex optimization.
+            The following figure illustrates the Neural network architecture for semantic trajectory generation in SAGES. Natural language task
+descriptions, constraint signals, states, and controls are encoded into a shared embedding space, which is used to
+predict next-step control and state variables.
           </p>
         </div>
       </div>
