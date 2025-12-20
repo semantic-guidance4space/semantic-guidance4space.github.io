@@ -202,37 +202,63 @@
 
 
  <section class="section">
- <div class="container is-max-desktop">
-  
-    <!-- Abstract. -->
+  <div class="container is-max-desktop">
+
+    <!-- ================= Abstract ================= -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Reliable real-time trajectory generation is essential for future autonomous spacecraft. While recent progress in nonconvex guidance and control is paving the way for onboard autonomous trajectory optimization, these methods still rely on extensive expert input (e.g., waypoints, constraints, mission timelines, etc.), which limits the operational scalability in real rendezvous missions.
-            This paper introduces SAGES (Semantic Autonomous Guidance Engine for Space), a trajectory-generation framework that translates natural-language commands into spacecraft trajectories that reflect high-level intent while respecting nonconvex constraints. 
-            Experiments in two settings---fault-tolerant proximity operations with continuous-time constraint enforcement and a free-flying robotic platform---demonstrate that SAGES reliably produces trajectories aligned with human commands, achieving over 90\% semantic-behavioral consistency across diverse behavior modes.
-            Ultimately, this work marks an initial step toward language-conditioned, constraint-aware spacecraft trajectory generation, enabling operators to interactively guide both safety and behavior through intuitive natural-language commands with reduced expert burden. 
+            This paper introduces <strong>SAGES</strong> (Semantic Autonomous Guidance Engine for Space), a trajectory-generation framework that translates natural-language commands into spacecraft trajectories that reflect high-level intent while respecting nonconvex constraints.
+            Experiments in two settings—fault-tolerant proximity operations with continuous-time constraint enforcement and a free-flying robotic platform—demonstrate that SAGES reliably produces trajectories aligned with human commands, achieving over 90% semantic-behavioral consistency across diverse behavior modes.
+            Ultimately, this work marks an initial step toward language-conditioned, constraint-aware spacecraft trajectory generation, enabling operators to interactively guide both safety and behavior through intuitive natural-language commands with reduced expert burden.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-  <section class="section">
-  <div class="container is-max-desktop">
+    <!-- ============================================ -->
 
+    <!-- ================= Summary Figure ================= -->
     <div class="content has-text-centered">
       <img src="./static/images/sages_summary.png"
-      height="400px" width="1200px"/>
+           width="1200"
+           height="400"
+           style="max-width:100%; height:auto;" />
     </div>
-     
+    <!-- =============================================== -->
+
+    <!-- ================= Text ABOVE second figure ================= -->
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <div class="content has-text-justified">
+          <h3 class="title is-4">Language-Conditioned Trajectory Generation</h3>
+          <p>
+            The following figure illustrates the transformer-based trajectory generation pipeline used in SAGES.
+            Natural-language commands are embedded and fused with system state and constraint representations,
+            enabling the model to generate dynamically feasible, constraint-aware trajectory proposals that
+            can be directly executed or used to warm-start sequential convex optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================ -->
+
+    <!-- ================= Second Figure ================= -->
     <div class="columns is-centered">
       <div class="content has-text-centered">
         <img src="./static/images/TC_DT.png"
-        height="400px" width="600px"/>
+             width="600"
+             height="400"
+             style="max-width:100%; height:auto;" />
       </div>
     </div>
+    <!-- ================================================ -->
+
+  </div>
+</section>
+
 
 
     <!-- <div class="columns is-centered has-text-centered">
