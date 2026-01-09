@@ -118,7 +118,7 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-              AIAA SCITECH 2026
+              AIAA SCITECH 2026 Forum
           </div>
 
           <div class="column has-text-centered">
@@ -142,37 +142,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!---<span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>-->
-              <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span> -->
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
             </div>
-
           </div>
         </div>
       </div>
@@ -187,14 +157,14 @@
         <div class="column is-three-fifths">
           <div class="content is-centered">
             <video poster="" id="hardware_experiments" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/sages_hardware_orin.mp4"
+              <source src="./static/videos/sages_ad.mp4"
                       type="video/mp4">
             </video>
           </div>
         </div>
       </div>
       <h2 class="subtitle has-text-centered">
-        SAGES translates natural-language guidance into safe, executable trajectories, validated here on a free-flyer robot with onboard optimization and real-time tracking.
+        SAGES translates natural-language guidance into safe and executable trajectories with high-level intent captured.
       </h2>
     </div>
   </div>
@@ -257,7 +227,7 @@
     <div class="columns is-centered">
       <div class="content has-text-centered">
         <img src="./static/images/TC_DT.png"
-             width="600" height="400"
+             width="800" height="400"
              style="max-width:100%; height:auto;" />
       </div>
     </div>
@@ -280,7 +250,7 @@
           </p>
           <ol type="a">
             <li><em>Free-flyer robotic testbed</em></li>
-            <li><em>Fault-tolerant spacecraft proximity operation scenario</em></li>
+            <li><em>Continuous-time fault-tolerant spacecraft proximity operation </em></li>
           </ol>
         </div>
 
@@ -318,7 +288,7 @@
           <figure class="figure-large">
             <img src="./static/images/rep_traj_rpod.png"
                  alt="RPOD representative trajectory"
-                 width="900"
+                 width="850"
                  height="315"
                  style="max-width:100%; height:auto;" />
             <figcaption class="figure-caption">
@@ -376,9 +346,6 @@
   </div>
 </section>
 
-
-
-
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -393,17 +360,33 @@
              that are refined and tracked in real time on a free-flyer robotic testbed.
             </p>
           </div>
-          <div class="content has-text-centered">
-            <img src="./static/images/ff_hardware_traj_c.png"
-            height="500px" width="500px"/>
+
+          <div class="columns is-centered">
+            <div class="column is-three-fifths">
+              <video poster="" id="hardware_experiments" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/sages_hardware_orin.mp4"
+                        type="video/mp4"
+                        width="700px"
+                        height="400px"
+                        style="max-width: 100%; height: auto;"
+                        >
+              </video>
+            </div>
           </div>
-          
+            
           <div class="content has-text-justified">
             <p>
              Trajectory executions and velocity histories validate behavior-dependent motion, including differences in speed profiles.
              The experiments confirm the practicality of proposed framework.
             </p>
           </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/ff_hardware_traj_c.png"
+            height="500px" 
+            width="600px"
+            style="max-width:100%; height:auto;" />
+          </div>
+          
           <div class="content has-text-centered">
             <img src="./static/images/ff_hardware_trajcontrol_c.png"
             height="500px" width="500px"/>
@@ -423,8 +406,9 @@
     <pre><code>@article{sages_2026,
   author    = {Takubo, Y. and Dwivedi, A. and Ramkumar S. and Pabon, L. and Gammelli, D. and Pavone, M. and D'Amico, S.},
   title     = {Semantic Trajectory Generation for Goal-Oriented Spacecraft Rendezvous},
-  journal   = {AIAA SCITECH 2026},
+  journal   = {AIAA SCITECH 2026 Forum},
   year      = {2026},
+  doi       = {10.2514/6.2026-0350},
 }</code></pre>
   </div>
 </section>
